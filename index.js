@@ -3,12 +3,12 @@ const fs = require("fs");
 const path = require("path");
 const bodyParser=require('body-parser')
 const cors = require("cors");
-app.use(cors());
 
 
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const filePath = path.join(__dirname, "data", "jokes.json");
 app.use(bodyParser.urlencoded({extended:true}))

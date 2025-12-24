@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "joke": "Why don’t programmers like nature? Because it has too many bugs."
+  },
+  {
+    "id": 2,
+    "joke": "Why do Java developers wear glasses? Because they don’t C#."
+  },
+  {
+    "id": 3,
+    "joke": "Debugging is like being the detective in a crime movie where you are also the murderer."
+  },
+  {
+    "id": 4,
+    "joke": "I told my computer I needed a break, and it said: No problem — I’ll freeze."
+  },
+  {
+    "id": 5,
+    "joke": "Why was the JavaScript developer sad? Because he didn’t know how to ‘null’ his feelings."
+  },
+  {
+    "id": 6,
+    "joke": "A SQL query walks into a bar, walks up to two tables and asks: Can I join you?"
+  },
+  {
+    "id": 7,
+    "joke": "Why do programmers prefer dark mode? Because light attracts bugs."
+  },
+  {
+    "id": 8,
+    "joke": "There are only 10 types of people in the world: those who understand binary and those who don’t."
+  },
+  {
+    "id": 9,
+    "joke": "Programming is 10% writing code and 90% figuring out why it doesn’t work."
+  },
+  {
+    "id": 10,
+    "joke": "Why did the developer go broke? Because he used up all his cache."
+  }
+]

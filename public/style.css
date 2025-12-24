@@ -1,0 +1,81 @@
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f0f2f5;
+      padding: 30px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .base-url {
+      background: #111;
+      color: #00ff99;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    .endpoint {
+      background: #fff;
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .method {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .get { background: #2196F3; }
+    .post { background: #4CAF50; }
+    .put { background: #FF9800; }
+    .patch { background: #9C27B0; }
+    .delete { background: #F44336; }
+
+    code {
+      display: block;
+      background: #f4f4f4;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+
+    .note {
+      background: #fff3cd;
+      padding: 20px;
+      border-left: 6px solid #ffc107;
+      border-radius: 8px;
+      margin-top: 40px;
+    }

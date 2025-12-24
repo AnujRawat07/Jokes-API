@@ -9,6 +9,7 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
 
 const filePath = path.join(__dirname, "data", "jokes.json");
 app.use(bodyParser.urlencoded({extended:true}))
@@ -22,6 +23,9 @@ function saveJokes(jokes) {
   fs.writeFileSync(filePath, JSON.stringify(jokes, null, 2));
 }
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 // all jokes
 app.get("/jokes", (req, res) => {

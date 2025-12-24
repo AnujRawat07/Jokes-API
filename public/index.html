@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jokes API – Full Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+
+<div class="container">
+
+<h1>😂 Jokes API – Complete Documentation</h1>
+
+<p>
+This API allows users to perform full <b>CRUD operations</b> on jokes data.
+It is built using <b>Node.js</b> and <b>Express.js</b> and follows REST principles.
+</p>
+
+<h2>🌐 Base URL</h2>
+<div class="base-url">
+https://jokes-api-zyh6.onrender.com
+</div>
+
+<!-- GET ALL JOKES -->
+<div class="endpoint">
+  <span class="method get">GET</span><b>/jokes</b>
+
+  <h3>Description</h3>
+  <p>Returns a list of all jokes in JSON format.</p>
+
+  <h3>Request</h3>
+  <code>GET /jokes</code>
+
+  <h3>Response (200 OK)</h3>
+  <code>
+[
+  {
+    "id": 1,
+    "joke": "Why don't programmers like nature? Too many bugs."
+  },
+  {
+    "id": 2,
+    "joke": "Why do Java developers wear glasses? Because they don’t see sharp."
+  }
+]
+  </code>
+</div>
+
+<!-- GET RANDOM -->
+<div class="endpoint">
+  <span class="method get">GET</span><b>/jokes/random</b>
+
+  <h3>Description</h3>
+  <p>Fetches a single random joke.</p>
+
+  <h3>Request</h3>
+  <code>GET /jokes/random</code>
+
+  <h3>Response (200 OK)</h3>
+  <code>
+{
+  "id": 3,
+  "joke": "Debugging: Removing the needles from the haystack."
+}
+  </code>
+</div>
+
+<!-- POST -->
+<div class="endpoint">
+  <span class="method post">POST</span><b>/jokes</b>
+
+  <h3>Description</h3>
+  <p>Creates a new joke.</p>
+
+  <h3>Request Body</h3>
+  <code>
+{
+  "joke": "Why did the developer go broke? Because he used up all his cache."
+}
+  </code>
+
+  <h3>Response (201 Created)</h3>
+  <code>
+{
+  "id": 6,
+  "joke": "Why did the developer go broke? Because he used up all his cache."
+}
+  </code>
+</div>
+
+<!-- PUT -->
+<div class="endpoint">
+  <span class="method put">PUT</span><b>/jokes/:id</b>
+
+  <h3>Description</h3>
+  <p>Fully updates a joke using its ID.</p>
+
+  <h3>Request</h3>
+  <code>
+PUT /jokes/1
+{
+  "joke": "This joke has been completely updated."
+}
+  </code>
+
+  <h3>Response (200 OK)</h3>
+  <code>
+{
+  "id": 1,
+  "joke": "This joke has been completely updated."
+}
+  </code>
+</div>
+
+<!-- PATCH -->
+<div class="endpoint">
+  <span class="method patch">PATCH</span><b>/jokes/:id</b>
+
+  <h3>Description</h3>
+  <p>Partially updates a joke.</p>
+
+  <h3>Request</h3>
+  <code>
+PATCH /jokes/2
+{
+  "joke": "This joke was partially updated."
+}
+  </code>
+
+  <h3>Response (200 OK)</h3>
+  <code>
+{
+  "id": 2,
+  "joke": "This joke was partially updated."
+}
+  </code>
+</div>
+
+<!-- DELETE -->
+<div class="endpoint">
+  <span class="method delete">DELETE</span><b>/jokes/:id</b>
+
+  <h3>Description</h3>
+  <p>Deletes a joke permanently.</p>
+
+  <h3>Request</h3>
+  <code>DELETE /jokes/3</code>
+
+  <h3>Response (200 OK)</h3>
+  <code>
+{
+  "message": "Joke deleted successfully"
+}
+  </code>
+</div>
+
+<div class="note">
+<b>ℹ️ Note:</b><br />
+Use <b>Postman</b>, <b>Thunder Client</b>, or frontend tools like
+<b>fetch</b> / <b>axios</b> to test these APIs.
+</div>
+
+</div>
+</body>
+</html>
